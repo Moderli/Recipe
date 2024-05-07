@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(cors());
 
 // Replace these placeholders with your actual MongoDB Atlas connection details
-const uri = "mongodb+srv://bharath:tonygame%401234@cluster0.vljze2q.mongodb.net/";
-const username = "bharath";
-const password = "tonygame@1234";
+const uri = "Connection_String";
+const username = "UserName";
+const password = "Password"; //if you use any special letters like "@#%^&*&*!@#" you have to go to mongoDb compass and paste the connection string and you have to connect and then you have to copy the connection string from the compass
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
@@ -19,7 +19,7 @@ mongoose.connect(uri, {
 .then(() => console.log('MongoDB Atlas connected'))
 .catch(err => console.error(err));
 
-app.post('/register', (req, res) => {
+app.post('/register', (req, res) => {D
   const { email, password } = req.body;
 
   FormDataModel.findOne({ email: email })
