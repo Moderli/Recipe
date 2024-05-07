@@ -7,8 +7,8 @@ import Recipe from "./Recipe";
 
 
 const Home = () => {
-  const APP_ID = "6d6687a7";
-  const APP_KEY = "276a106691ab94fd9dec2d5082fe0965";
+  const APP_ID = "APIID";
+  const APP_KEY = "APIKEY";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState();
