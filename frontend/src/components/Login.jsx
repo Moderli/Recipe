@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'http://localhost:3001/login', {email, password})
+        axios.post( 'https://recipe-s41u.vercel.app/login', {email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Success"){
