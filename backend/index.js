@@ -36,8 +36,12 @@ app.post('/register', (req, res) => {D
     .catch(err => res.json({ error: err.message })); // Handle errors
 });
 
-app.get('/',(req, res) => {
-  return("working") )};
+
+app.post('/register', (req, res) => {
+  return('happy')
+});
+
+
 
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
