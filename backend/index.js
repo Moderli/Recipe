@@ -37,8 +37,8 @@ app.post('/register', (req, res) => {D
 });
 
 
-app.post('/register', (req, res) => {
-  return('happy')
+app.post('/', (req, res) => {
+  res.json("Hello");
 });
 
 
