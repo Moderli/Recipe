@@ -5,7 +5,12 @@ const FormDataModel = require('./models/FormData'); // Import the model
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+  origin: ["https://recipe-s41u.vercel.app/"],
+  methods: ["POST","GET"],
+  credentials: true,
+}));
 
 // Replace these placeholders with your actual MongoDB Atlas connection details
 const uri = "mongodb+srv://bharath:tonygame%401234@cluster0.vljze2q.mongodb.net/";
