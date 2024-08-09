@@ -13,7 +13,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'https://recipe-s41u.vercel.app/register', {name, email, password})
+        axios.post( 'https://recipe-lbts.onrender.com/register', {name, email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Already registered"){
